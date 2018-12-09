@@ -1,0 +1,15 @@
+def single_finder(nums):
+    """Given a non-empty array of integers, every element appears twice except for one. Finds that single one."""
+
+    from collections import Counter # import the counter funct. from collections
+
+    count_list = Counter(nums)  # counts the number of the elements 
+
+    for key, value in count_list.items():   # as count_list is a Dict, then we can easily control the keys and values
+                                        
+        if value == 1:                      # if a value (number of elements) is 1 
+        
+            return key
+            
+list1= [2,2,1,1,1,2,3,4,3,5,5,6,7,6,7] 
+single_finder(list1)

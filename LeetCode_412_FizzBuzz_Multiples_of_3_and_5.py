@@ -9,7 +9,7 @@ def FizzBuzz (n) :
     for x in range (1, n+1): # n times for loop
         
         if x % 15 == 0 : # multiples of both three and five, which is same as multiples of 15 
-                         # 
+                        
             new_list.append ( "FizzBuzz" ) # if the number multiples of both, then append as "FizzBuzz" to the list
                                            
         elif x % 5 == 0: # multiples of  five
